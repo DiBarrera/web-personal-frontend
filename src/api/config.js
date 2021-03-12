@@ -1,1 +1,1 @@
-export const basePath = 'http://localhost:3001'
+export const basePath = 'https://web-personal-tipo-blog.herokuapp.com/'
