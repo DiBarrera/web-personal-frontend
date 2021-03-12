@@ -9,6 +9,9 @@ import {
   } from 'react-router-dom';
 import Logo from '../../../assets/img/png/logo-personal.png';
 import RegisterForm from '../../../components/Admin/RegisterForm';
+import clienteAxios from '../../../config/axios';
+import tokenAuth from '../../../config/token';
+import LoginForm from '../../../components/Admin/LoginForm';
 
 import './Signin.scss';
 
@@ -25,7 +28,7 @@ export default function Signin() {
                 <div className='signin__content-tabs'>
                     <Tabs type='card'>
                         <TabPane tab={<span>Entrar</span>} key='1'>
-                            Componente Loginform
+                            <LoginForm />
                         </TabPane>
                         <TabPane tab={<span>Nuevo usuario</span>} key='2'>
                             <RegisterForm />
